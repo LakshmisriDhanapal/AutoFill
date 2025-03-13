@@ -25,7 +25,6 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/laksh/Downloads/ocr-mod
 vision_client = vision.ImageAnnotatorClient()
 
 # Configure Gemini AI
-API_KEY = "AIzaSyBmhYqpVLtTshBtCZdVXSJGmfzS3rPL7TE"  # Replace with your actual API key
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-pro-latest")
 

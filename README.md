@@ -8,14 +8,14 @@ AI Agent
 The Automatic Form Filling System is a deep learning and OCR-based solution designed to automate the admission form-filling process for universities. It allows users to upload scanned mark sheets or documents through a drag-and-drop interface, extracts structured information using OCR, and automatically populates predefined admission form fields. This reduces manual effort, minimizes errors, and accelerates the admission workflow.
 
 ## Features
-📂 Drag-and-drop document upload
-🔍 OCR-based text extraction using Google Vision API
-🧹 Preprocessing techniques: image enhancement, noise removal, text alignment
-📝 Automatic mapping of extracted data into admission form fields
-✅ Validation checks for data consistency and accuracy
-⚡ Fast performance – reduces form-filling time to under 30 seconds
-🗄️ Database integration for storing extracted information
-📅 Supports mark sheets of any academic year
+-📂 Drag-and-drop document upload
+-🔍 OCR-based text extraction using Google Vision API
+-🧹 Preprocessing techniques: image enhancement, noise removal, text alignment
+-📝 Automatic mapping of extracted data into admission form fields
+-✅ Validation checks for data consistency and accuracy
+-⚡ Fast performance – reduces form-filling time to under 30 seconds
+-🗄️ Database integration for storing extracted information
+-📅 Supports mark sheets of any academic year
 
 ## Tech Stack
 -Deep Learning Frameworks: TensorFlow
@@ -57,7 +57,7 @@ The system follows a structured pipeline:
 - Implement cloud-based MongoDB storage (MongoDB Atlas)
 - Enhance UI for better user experience
 - Add multi-document processing support
--Interactive dashboard for student analytics
+- Interactive dashboard for student analytics
 
 ## Acknowledgments
 - **Google Vision API**

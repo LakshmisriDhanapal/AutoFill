@@ -1,11 +1,14 @@
 import google.generativeai as genai
 import json
 
+# Configure the API
+genai.configure(api_key="***********************")
+
 # Load the model
 model = genai.GenerativeModel("gemini-1.5-pro-latest")
 
 # Read the file content with proper encoding and error handling
-file_path = "C:/Users/laksh/OneDrive/Desktop/AutoFill/text_output/12TH MARKSHEET-03062024102441420.txt"
+file_path = "./AutoFill/text_output/MARKSHEET.txt"
 with open(file_path, "r", encoding="utf-8", errors="ignore") as file:
     extracted_text = file.read()
 
@@ -50,7 +53,7 @@ except json.JSONDecodeError:
 formatted_json = json.dumps(json_data, indent=4, ensure_ascii=False)
 
 # Save JSON to a file
-output_file_path = "C:/Users/laksh/OneDrive/Desktop/AutoFill/json_output.json"
+output_file_path = "./AutoFill/json_output.json"
 with open(output_file_path, "w", encoding="utf-8") as json_file:
     json_file.write(formatted_json)
 

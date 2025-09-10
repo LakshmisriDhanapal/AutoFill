@@ -3,7 +3,7 @@ from google.cloud import vision
 from google.cloud.vision_v1 import types
 
 # Set Google Cloud credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/laksh/Downloads/ocr-model-451910-c14b246a31ed.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "*************************"
 
 def extract_text_from_image(image_path):
     """Extracts text from an image using Google Vision API"""
@@ -54,7 +54,8 @@ def process_images_in_folder(folder_path, output_folder):
         save_text_to_file(extracted_text, output_file)
 
 # Folder containing images
-folder_path = "C:/Users/laksh/OneDrive/Desktop/AutoFill/image"
+folder_path = "./AutoFill/image"
 # Folder to save extracted text files
-output_folder = "C:/Users/laksh/OneDrive/Desktop/AutoFill/text_output"
+output_folder = "./AutoFill/text_output"
+
 process_images_in_folder(folder_path, output_folder)

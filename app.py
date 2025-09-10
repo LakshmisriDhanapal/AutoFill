@@ -16,12 +16,12 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Connect to MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb")
 db = client["ocr_database"]
 collection = db["extracted_data"]
 
 # Set up Google Vision API client
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/laksh/Downloads/ocr-model-451910-c14b246a31ed.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./ocr-model.json"
 vision_client = vision.ImageAnnotatorClient()
 
 # Configure Gemini AI
@@ -175,3 +175,4 @@ def extract_json_from_text(text):
 # -------------------------------------
 if __name__ == "__main__":
     app.run(debug=True)
+

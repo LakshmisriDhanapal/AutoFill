@@ -4,15 +4,26 @@ AI Agent
 ### Automatic Form Filling System using Google Vision API
 
 ## Overview
-This project implements an Automatic Form Filling System using Google Vision API's OCR technology. The goal is to extract text from uploaded images (e.g., marksheets, forms, or documents), convert it into JSON format, store it in MongoDB, and autofill forms based on the extracted data.
+The Automatic Form Filling System is a deep learning and OCR-based solution designed to automate the admission form-filling process for universities. It allows users to upload scanned mark sheets or documents through a drag-and-drop interface, extracts structured information using OCR, and automatically populates predefined admission form fields. This reduces manual effort, minimizes errors, and accelerates the admission workflow.
 
 ## Features
-- **OCR Processing:** Extracts text from images using Google Vision API.
-- **JSON Conversion:** Converts extracted text into structured JSON format using Gemini API .
-- **MongoDB Storage:** Saves JSON data in a local MongoDB database.
-- **Flask Web Application:** Provides a web interface for image upload and data retrieval.
-- **Automatic Form Filling:** Autofills forms using stored JSON data.
-- 
+📂 Drag-and-drop document upload
+🔍 OCR-based text extraction using Google Vision API
+🧹 Preprocessing techniques: image enhancement, noise removal, text alignment
+📝 Automatic mapping of extracted data into admission form fields
+✅ Validation checks for data consistency and accuracy
+⚡ Fast performance – reduces form-filling time to under 30 seconds
+🗄️ Database integration for storing extracted information
+📅 Supports mark sheets of any academic year
+
+## Tech Stack
+-Deep Learning Frameworks: TensorFlow
+-OCR Engine: Google Vision API
+-AI Model: Google Gemini API (Text-to-Json)
+-Frontend: HTML, CSS, JavaScript (Drag-and-Drop UI)
+-Backend: Python (Flask)
+-Database: MongoDB
+  
 ### Prerequisites
 - Python (>=3.8)
 - Google Cloud Project with Vision API enabled
@@ -45,7 +56,7 @@ The system follows a structured pipeline:
 - Implement cloud-based MongoDB storage (MongoDB Atlas)
 - Enhance UI for better user experience
 - Add multi-document processing support
-
+-Interactive dashboard for student analytics
 
 ## Acknowledgments
 - **Google Vision API**

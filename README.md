@@ -1,7 +1,8 @@
-# AutoFill
+# Automatic_Form_Filling_System
+
 AI Agent
 
-### Automatic Form Filling System using Google Vision API
+### Auto Fill
 
 ## Overview
 The Automatic Form Filling System is a deep learning and OCR-based solution designed to automate the admission form-filling process for universities. It allows users to upload scanned mark sheets or documents through a drag-and-drop interface, extracts structured information using OCR, and automatically populates predefined admission form fields. This reduces manual effort, minimizes errors, and accelerates the admission workflow.
